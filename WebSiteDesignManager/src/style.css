@@ -1,0 +1,369 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+ul,
+li {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  color: #333;
+  text-decoration: none;
+}
+
+body {
+  font-size: 14px;
+  background-color: #11145C;
+  color: #fff;
+}
+
+body,
+html {
+  width: 100%;
+  height: 100%;
+}
+
+#module {
+  height: 100%;
+}
+
+#app {
+  height: 100%;
+}
+
+/*登录*/
+.login {
+  background: url(./assets/img/bg.jpg) no-repeat;
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  perspective: 800px;
+}
+
+.login-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  left: 0;
+  top: 50%;
+  transform: translate(0, -50%);
+  background: rgba(255, 255, 255, .3);
+  padding: 40px;
+}
+
+.login-box {
+  width: 250px;
+  height: 200px;
+  margin: 0 10px;
+  box-shadow: 0 3px 20px 2px rgba(0, 0, 0, .3);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+
+.login-box i {
+  font-size: 40px;
+}
+
+.login-form {
+  width: 45vh;
+  padding: 20px;
+  box-shadow: 0 3px 20px 2px rgba(0, 0, 0, .3);
+  /* position: relative;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%); */
+  text-align: center;
+}
+
+.login-form .el-form-item__content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  flex: 1;
+  line-height: 32px;
+  position: relative;
+  font-size: var(--font-size);
+  min-width: 0;
+  justify-content: center;
+}
+
+.login-form .el-form-item__content .el-button {
+  margin-left: -70px;
+}
+
+.login-form .login-title,
+.login-form .el-form-item__label {
+  color: #fff;
+}
+
+.login .login-title {
+  font-size: 25px;
+  margin: 20px 0;
+}
+
+.login .login-button {
+  margin-left: -70px;
+  width: 100px;
+}
+
+.exit {
+  float: right;
+  margin: 10px;
+  padding: 2px 10px;
+  background: #233444;
+  border: none;
+  color: #fff;
+}
+
+/* 首页 */
+#module .el-container {
+  height: 100%;
+}
+
+#module .el-container .el-menu-item,
+#module .el-container .el-sub-menu .el-sub-menu__title {
+  color: #f9f9f9;
+}
+
+#module .el-container .el-menu-item:hover,
+#module .el-container .el-sub-menu .el-sub-menu__title:hover {
+  color: #fff;
+  background: #30377d;
+}
+
+#module .el-menu-item.is-active,
+#module .el-sub-menu.is-active {
+  color: #fff;
+  background: #30377d;
+}
+
+#module .el-container .el-sub-menu.is-active.is-opened,
+#module .el-container .el-sub-menu.is-active.is-opened .el-sub-menu__title {
+  color: #f9f9f9;
+  background: #20266d;
+}
+
+#module .el-container .el-header {
+  /* border-bottom: 1px solid #f1f1f1; */
+  background: #20266d;
+}
+
+#module .el-container .el-header .exit {
+  margin-top: 10px;
+}
+
+#module .aside {
+  background: #20266d;
+}
+
+#module .aside .el-menu {
+  border-right: solid 1px #20266d;
+  background: #20266d;
+}
+
+#module .el-submenu__title {
+  color: #f9f9f9;
+}
+
+/* 面包屑 */
+#module .breadcrumb {
+  padding: 20px;
+  display: inline-block;
+}
+
+#module .breadcrumb ul li {
+  display: inline-block;
+}
+
+#module .breadcrumb ul li span {
+  padding: 0 5px;
+}
+
+#module .el-carousel__item img {
+  color: #fff;
+  font-size: 14px;
+  opacity: 0.75;
+  line-height: 200px;
+  margin: 0;
+  max-width: 100%;
+}
+
+#module .breadcrumb .el-breadcrumb__item .el-breadcrumb__inner,
+#module .breadcrumb .el-breadcrumb__item .el-breadcrumb__inner a {
+  color: #fff;
+}
+
+#module .el-carousel__item:nth-child(2n) {
+  background-color: #99a9bf;
+}
+
+#module .el-carousel__item:nth-child(2n+1) {
+  background-color: #d3dce6;
+}
+
+/* 首页主体部分 */
+#module .index-content {
+  display: flex;
+  width: 100%;
+}
+
+#module .index-content .content-left {
+  flex: 30%;
+}
+
+#module .index-content .content-right {
+  flex: 70%;
+}
+
+#module .index-content .content {
+  margin: 10px;
+  background: #fff;
+}
+
+
+#module .el-main .el-card {
+  border: none;
+  background: #20266d;
+}
+
+#module .el-main .el-card .el-card__body {
+  color: #fff;
+}
+
+@media screen and (max-width: 1024px) {
+  .index-title li {
+    width: 18%;
+  }
+}
+
+.index-title li:nth-child(1) {
+  background: #fe8688;
+}
+
+.index-title li:nth-child(2) {
+  background: #feba35;
+}
+
+.index-title li:nth-child(3) {
+  background: #1bc6bd;
+}
+
+.index-title li:nth-child(4) {
+  background: #ba99ff;
+}
+
+
+
+.banner {
+  position: relative;
+  float: left;
+}
+
+.banner .banner-circle {
+  position: absolute;
+  bottom: 5px;
+  left: 0;
+  right: 0;
+  color: #fff;
+}
+
+.banner .banner-circle li {
+  display: inline-block;
+  background: rgba(0, 0, 0, .3);
+  border-radius: 50%;
+  padding: 5px;
+  margin: 2px;
+}
+
+.banner .banner-circle ul {
+  text-align: center;
+}
+
+.banner .banner-circle .selected {
+  background: rgba(0, 0, 0, .8);
+}
+
+.banner img {
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 10px;
+  text-align: center;
+}
+
+.table tbody {
+  background: #fff;
+}
+
+.table td,
+.table th {
+  border: 1px solid #1890ff;
+  padding: 10px;
+}
+
+.table thead tr {
+  background: #1f76b3;
+  color: #fff;
+}
+
+.module-box {
+  display: flex;
+  /*弹性布局*/
+  justify-content: space-between;
+}
+
+.list-box {
+  margin: 0 10px;
+  padding: 20px;
+  box-shadow: 0 3px 20px 2px rgb(0 0 0 / 30%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+
+.list-box i {
+  font-size: 40px;
+}
+
+.box:nth-child(1) .list-box {
+  background-image: linear-gradient(#2277ce, #0356ab);
+}
+
+.box:nth-child(2) .list-box {
+  background-image: linear-gradient(#ba5bd8, #9f3fbd);
+}
+
+.box:nth-child(3) .list-box {
+  background-image: linear-gradient(#ea8052, #cf673a);
+}
+
+.box:nth-child(4) .list-box {
+  background-image: linear-gradient(#84f395, #71c24a);
+}
+
+.box:nth-child(5) .list-box {
+  background-image: linear-gradient(#A44A38, #902569);
+}
+
+.marginBottom {
+  margin-bottom: 10px;
+}
+
+.pagination {
+  margin: 10px 0;
+}
